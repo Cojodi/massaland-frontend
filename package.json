@@ -13,9 +13,8 @@
     "precommit-hook": "lint-staged"
   },
   "dependencies": {
-    "@alephium/web3": "^0.22.0",
-    "@alephium/web3-react": "^0.22.0",
-    "@alephium/web3-wallet": "^0.22.0",
+    "@massalabs/massa-web3": "^3.0.2",
+    "@massalabs/wallet-provider": "^1.5.2",
     "bignumber.js": "^9.1.1",
     "bowser": "^2.11.0",
     "cookies-next": "^2.1.1",
@@ -55,7 +54,6 @@
     "typescript": "4.7.4"
   },
   "browser": {
-    "fs": false,
     "path": false,
     "os": false
   },

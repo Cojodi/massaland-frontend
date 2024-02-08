@@ -2,7 +2,6 @@ import alephiumLogo from "../../assets/alephium-logos/dark/Logo-Horizontal-Dark.
 import alert from "../../assets/icons/alert.svg";
 import Button from "../Button/Button";
 import Modal from "./Modal";
-import { AlephiumConnectButton } from "@alephium/web3-react";
 import Image from "next/image";
 import React from "react";
 
@@ -36,21 +35,21 @@ const ConnectWalletModal = ({
         {fromNav ? textVariantNav : textVariantDapp}
       </div>
       <div className="pb-14">
-        <AlephiumConnectButton.Custom>
-          {({ show }) => {
-            return (
-              <Button
-                variant="primary"
-                onClick={() => {
-                  onConfirm();
-                  show?.();
-                }}
-              >
-                Connect and rate
-              </Button>
-            );
-          }}
-        </AlephiumConnectButton.Custom>
+        {/*<AlephiumConnectButton.Custom>*/}
+        {/*  {({ show }) => {*/}
+        {/*    return (*/}
+        {/*      <Button*/}
+        {/*        variant="primary"*/}
+        {/*        onClick={() => {*/}
+        {/*          onConfirm();*/}
+        {/*          show?.();*/}
+        {/*        }}*/}
+        {/*      >*/}
+        {/*        Connect and rate*/}
+        {/*      </Button>*/}
+        {/*    );*/}
+        {/*  }}*/}
+        {/*</AlephiumConnectButton.Custom>*/}
       </div>
       {error && (
         <div className="bg-black flex gap-3 items-center text-white font-[14px] p-4 rounded-lg mb-14">

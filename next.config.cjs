@@ -1,13 +1,18 @@
 /** @type {import('next').NextConfig} */
+
+const withTM = require('next-transpile-modules')(['react-hook-mousetrap']);
+
 const nextConfig = {
   reactStrictMode: true,
   env: {
     NEXT_PUBLIC_API_URL: "https://api.massa.land",
   },
   swcMinify: true,
+
   compiler: {
     styledComponents: true,
   },
+
   webpack(config) {
     const fileLoaderRule = config.module.rules.find(
       (rule) => rule.test && rule.test.test(".svg")
@@ -17,13 +22,13 @@ const nextConfig = {
       test: /\.icon\.svg$/,
       loader: require.resolve("@svgr/webpack"),
     });
-    config.resolve.fallback = {
-      // if you miss it, all the other options in fallback, specified
-      // by next.js will be dropped.
-      ...config.resolve.fallback,
-
-      fs: false, // the solution
-    };
+    // config.resolve.fallback = {
+    //   // if you miss it, all the other options in fallback, specified
+    //   // by next.js will be dropped.
+    //   ...config.resolve.fallback,
+    //
+    //   fs: false, // the solution
+    // };
     return config;
   },
   images: {
