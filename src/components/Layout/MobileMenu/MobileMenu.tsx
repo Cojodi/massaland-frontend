@@ -2,8 +2,8 @@ import home from "../../../assets/icons/home.svg";
 import homeDark from "../../../assets/icons/home_dark.svg";
 import moon from "../../../assets/icons/moon.svg";
 import sun from "../../../assets/icons/sun.svg";
-import logoLight from "../../../assets/logo-alphland-light.svg";
-import logo from "../../../assets/logo-alphland.svg";
+import logoLight from "../../../assets/logo-massaland.svg";
+import logo from "../../../assets/logo-massaland.svg";
 import { useCategoryStore } from "../../../hooks/useCategoryStore";
 import Button from "../../Button/Button";
 import ConnectWallet from "../../Button/ConnectWallet";
@@ -173,7 +173,7 @@ const MobileMenu = ({ currentTheme, setTheme }: MobileMenuProps) => {
             variant="primary"
             className="w-full"
             withoutMobile
-            href="https://github.com/cojodi/Alphland#-add-your-dapp-to-Alphland"
+            href="https://github.com/cojodi/massaland#-add-your-dapp-to-massaland"
             target="_blank"
             rel="noopener noreferrer"
           >

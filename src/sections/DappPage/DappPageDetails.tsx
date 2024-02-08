@@ -90,7 +90,7 @@ const DappPageDetails = ({ dappInfo }: { dappInfo: DappInfo }) => {
           dappInfo.contracts.map((item) => (
             <p key={item.name} className="mt-2">
               <a
-                href={`https://explorer.alephium.org/addresses/${item.address}`}
+                href={`https://explorer.massa.net/mainnet/operation/${item.address}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-orange text-base truncate max-w-[200px] leading-6 font-semibold"
@@ -134,7 +134,7 @@ const DappPageDetails = ({ dappInfo }: { dappInfo: DappInfo }) => {
           dappInfo.tokens.map((item) => (
             <p key={item.address} className="mt-2">
               <a
-                href={`https://explorer.alephium.org/addresses/${item.address}`}
+                href={`https://explorer.massa.net/mainnet/operation//${item.address}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-orange text-base truncate max-w-[200px] leading-6 font-semibold"

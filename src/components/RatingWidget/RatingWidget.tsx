@@ -1,7 +1,7 @@
 import starEmpty from "../../assets/icons/starEmpty.svg";
 import starFilled from "../../assets/icons/starFilled.svg";
-import logoLight from "../../assets/logo-alphland-light.svg";
-import logo from "../../assets/logo-alphland.svg";
+import logoLight from "../../assets/logo-massaland.svg";
+import logo from "../../assets/logo-massaland.svg";
 import { useDarkMode } from "../../hooks/useDarkMode";
 import useRatingData from "../../hooks/useRatingData";
 import Loading from "./Loading/Loading";
@@ -14,7 +14,7 @@ const RatingWidget = (): ReactElement => {
   const { currentTheme, setTheme } = useDarkMode();
   const totalStars = 5;
   const activeStars = ratingData ? ratingData.average_rating : undefined;
-  const url = `https://www.alph.land/${dappName}`;
+  const url = `https://www.massa.land/${dappName}`;
 
   function handleClick() {
     if (window.top) {
@@ -85,9 +85,9 @@ const RatingWidget = (): ReactElement => {
               </div>
               <div className="mt-2 w-[124px] h-[37px]">
                 {currentTheme === "dark" ? (
-                  <Image src={logoLight} alt="Alphland logo" />
+                  <Image src={logoLight} alt="massaland logo" />
                 ) : (
-                  <Image src={logo} alt="Alphland logo" />
+                  <Image src={logo} alt="massaland logo" />
                 )}
               </div>
             </>

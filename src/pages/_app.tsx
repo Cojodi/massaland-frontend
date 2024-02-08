@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Script
           strategy="afterInteractive"
           defer
-          data-domain="alph.land"
+          data-domain="massa.land"
           data-api="/x/api/event"
           src="/x/js/script.js"
         />

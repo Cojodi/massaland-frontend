@@ -1,7 +1,7 @@
 import moon from "../../../assets/icons/moon.svg";
 import sun from "../../../assets/icons/sun.svg";
-import logoLightLottie from "../../../assets/logo-alphland-light.svg";
-import logoDarkLottie from "../../../assets/logo-alphland.svg";
+import logoLightLottie from "../../../assets/logo-massaland-light.svg";
+import logoDarkLottie from "../../../assets/logo-massaland.svg";
 import { useCategoryStore } from "../../../hooks/useCategoryStore";
 import { AnnouncementBar } from "../../AnnouncementBar";
 import Button from "../../Button/Button";
@@ -36,7 +36,7 @@ const DesktopMenu = ({ currentTheme, setTheme }: DesktopMenuProps) => {
               <Image
                 src={currentTheme === "dark" ? logoLightLottie : logoDarkLottie}
                 width={200}
-                alt={"Alphland logo"}
+                alt={"massaland logo"}
               />
             </div>
           </Link>
@@ -73,7 +73,7 @@ const DesktopMenu = ({ currentTheme, setTheme }: DesktopMenuProps) => {
             variant="primary"
             className="h-min"
             style={{ padding: "13px 24px", lineHeight: "normal" }}
-            href="https://github.com/cojodi/alphland#-add-your-dapp-to-Alphland"
+            href="https://github.com/cojodi/massaland#-add-your-dapp-to-massaland"
             target="_blank"
             rel="noopener noreferrer"
           >

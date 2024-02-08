@@ -1,7 +1,7 @@
 import moon from "../../../assets/icons/moon.svg";
 import sun from "../../../assets/icons/sun.svg";
-import logoLight from "../../../assets/logo-alphland-light.svg";
-import logoDark from "../../../assets/logo-alphland.svg";
+import logoLight from "../../../assets/logo-massaland-light.svg";
+import logoDark from "../../../assets/logo-massaland.svg";
 import Button from "../../Button/Button";
 import ConnectWallet from "../../Button/ConnectWallet";
 import Image from "next/image";
@@ -36,7 +36,7 @@ const HomeDesktopMenu = ({ currentTheme, setTheme }: DesktopMenuProps) => {
             variant="primary"
             className="h-min"
             style={{ padding: "13px 24px", lineHeight: "normal" }}
-            href="https://github.com/cojodi/Alphland#-add-your-dapp-to-Alphland"
+            href="https://github.com/cojodi/massaland#-add-your-dapp-to-massaland"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -53,12 +53,12 @@ const HomeDesktopMenu = ({ currentTheme, setTheme }: DesktopMenuProps) => {
           ></Image>
         </Link>
         <h1 className="bg-black dark:bg-white text-white dark:text-black pl-4 pr-4 pt-1 pb-2 text-center text-[32px] font-bold leading-[38px] rounded-md mb-6">
-          Discover the best dapps on Alephium
+          Discover the best dapps on Massa
         </h1>
         <h2 className="text-black dark:text-white text-[16px] leading-[20px] font-lighter">
           Proudly sponsored by{" "}
-          <a href="https://alephium.org/" target={"_blank"} rel="noreferrer">
-            Alephium
+          <a href="https://massa.net/" target={"_blank"} rel="noreferrer">
+            Massa
           </a>{" "}
           and{" "}
           <a

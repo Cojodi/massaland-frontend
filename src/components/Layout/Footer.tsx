@@ -19,7 +19,7 @@ const Footer = ({ currentTheme }: FooterProps) => {
         <div className="flex flex-row items-center justify-center mb-4 md:mb-0">
           <div>
             <a
-              href={"https://github.com/cojodi/Alphland"}
+              href={"https://github.com/cojodi/massaland"}
               className="flex justify-center items-center"
             >
               <Image
@@ -33,7 +33,7 @@ const Footer = ({ currentTheme }: FooterProps) => {
           <div>
             <a
               className="flex justify-center items-center"
-              href={"https://alephium.org"}
+              href={"https://massa.net"}
             >
               <Image
                 src={
@@ -41,7 +41,7 @@ const Footer = ({ currentTheme }: FooterProps) => {
                 }
                 width={120}
                 height={50}
-                alt={"alephium logo"}
+                alt={"massa logo"}
               />
             </a>
           </div>

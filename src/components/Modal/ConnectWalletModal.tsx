@@ -15,9 +15,9 @@ type Props = {
 };
 
 const textVariantDapp =
-  "To rate this dapp, you need to use an Alephium wallet and connect it to Alphland.";
+  "To rate this dapp, you need to use an Massa wallet and connect it to massaland.";
 const textVariantNav =
-  "To rate this dapp, you need to use an Alephium wallet and connect it to Alphland.";
+  "To rate this dapp, you need to use an Massa wallet and connect it to massaland.";
 
 const ConnectWalletModal = ({
   isOpen,
@@ -28,7 +28,7 @@ const ConnectWalletModal = ({
 }: Props) => (
   <Modal isOpen={isOpen} onClose={onClose}>
     <div className="flex flex-col items-center justify-center mt-10">
-      <Image src={alephiumLogo} alt="alephium-logo" />
+      <Image src={alephiumLogo} alt="massa-logo" />
       <div className="text-[40px] leading-[40px] font-bold mt-8 text-black text-center">
         Connect and rate
       </div>

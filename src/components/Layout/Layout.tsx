@@ -37,31 +37,31 @@ export const Layout = ({
       <Head>
         <title>
           {title
-            ? `${title} on Alphland – The best dapps on Alephium`
-            : `Alphland | The best dapps on Alephium`}
+            ? `${title} on massaland – The best dapps on Massa`
+            : `massaland | The best dapps on Massa`}
         </title>
         <meta
           name="description"
           content={
             description
               ? `${description}`
-              : `Alphland | The best dapps on Alephium`
+              : `massaland | The best dapps on Massa`
           }
         />
 
-        <meta property="og:site_name" content="alph.land" />
+        <meta property="og:site_name" content="massa.land" />
         <meta
           property="og:title"
           content={
             title
-              ? `Discover ${title} on Alphland – The best dapps on Alephium`
-              : `Alphland | The best dapps on Alephium`
+              ? `Discover ${title} on massaland – The best dapps on Massa`
+              : `massaland | The best dapps on Massa`
           }
         />
         {description && <meta name="og:description" content={description} />}
         <meta
           name="og:image"
-          content={image ?? "https://www.alph.land/share-preview.png"}
+          content={image ?? "https://www.massa.land/share-preview.png"}
         />
         <meta property="og:type" content="website" />
 
@@ -70,8 +70,8 @@ export const Layout = ({
           property="twitter:title"
           content={
             title
-              ? `Discover ${title} on Alphland – The best dapps on Alephium`
-              : `Alphland | The best dapps on Alephium`
+              ? `Discover ${title} on massaland – The best dapps on Massa`
+              : `massaland | The best dapps on Massa`
           }
         />
 
