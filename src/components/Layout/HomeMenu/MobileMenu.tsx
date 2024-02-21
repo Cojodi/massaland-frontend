@@ -173,8 +173,7 @@ const MobileMenu = ({ currentTheme, setTheme }: MobileMenuProps) => {
           Discover the best dapps on Massa
         </h1>
         <h2 className="text-black dark:text-white text-[16px] leading-[20px] font-lighter">
-          Proudly sponsored by <a href="https://massa.net/">Massa</a> and{" "}
-          <a href="https://twitter.com/Blockflow_DAO">Blockflow Alliance DAO</a>
+          Proudly sponsored by <a href="https://massa.net/">Massa</a>
         </h2>
       </div>
     </>

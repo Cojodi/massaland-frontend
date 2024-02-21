@@ -112,16 +112,13 @@ Fuel our code with caffeine! If you'd like to sponsor a coffee for our project, 
 
 Special thanks to [Argentlabs](https://github.com/argentlabs/dappland). We're deeply grateful for their work, which laid the groundwork for this project.
 
-We are immensely grateful to [Massa](https://massa.net/) and the [Blockflow Alliance DAO](https://twitter.com/Blockflow_DAO) for their generous support and sponsorship of this project.
+We are immensely grateful to [Massa](https://massa.net/)  for their generous support and sponsorship of this project.
 
-For more information about our sponsors:
+For more information about our sponsor:
 <div align="center">
 <a href="https://massa.net/">
 <img src="src/assets/alephium-logos/grey/Logo-Icon-Grey.png" alt="Alephium" title="Alephium" style="width: 100px;">
 </a>
 
-<a href="https://twitter.com/Blockflow_DAO">
-    <img src="src/assets/blockflow-alliance-dao.jpg" alt="Blockflow Alliance DAO" title="Blockflow Alliance DAO" style="width: 100px;">
-</a>
 </div>
 

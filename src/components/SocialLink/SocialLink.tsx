@@ -35,6 +35,7 @@ const icons: {
 
 const SocialLink = ({ name, link }: SocialLinkProps) => {
   if (name === "website" || name === "careers") return null;
+  console.log(name);
   return link.length > 0 ? (
     <Link href={link}>
       <a

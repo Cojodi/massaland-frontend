@@ -3,7 +3,6 @@ import arrow from "../assets/icons/arrowLeft.svg";
 import Layout from "../components/Layout";
 import DappPageDetails from "../sections/DappPage/DappPageDetails";
 import DappPageHeader from "../sections/DappPage/DappPageHeader";
-import DappPageTwitter from "../sections/DappPage/DappPageTwitter";
 import NFTPageStats from "../sections/NFTPage/NFTPageStats";
 import { readdir, readFile } from "fs/promises";
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";

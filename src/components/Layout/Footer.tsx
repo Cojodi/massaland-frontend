@@ -12,7 +12,8 @@ interface FooterProps {
 }
 
 const Footer = ({ currentTheme }: FooterProps) => {
-  const donationWalletAddr = "16uJvxtaSkuKEz3DEzCKHsemE4LWvnqZS1WrSAhoeL9Fr";
+  const donationWalletAddr =
+    "AU1VefqkYDNGHNoX6uoD4x9cqXVEfwatjF5cicPNaxLTGHhwgZLG";
   return (
     <section>
       <footer className="w-full py-6 px-4 border-t border-border-grey dark:border-white/10 flex flex-col md:flex-row justify-between">
@@ -65,7 +66,7 @@ const Footer = ({ currentTheme }: FooterProps) => {
           }}
         >
           <p className="text-center font-normal  text-xs text-base leading-[16px] ">
-            Donations (ALPH): <br /> {donationWalletAddr}
+            Donations (MASSA): <br /> {donationWalletAddr}
           </p>
         </button>
       </footer>

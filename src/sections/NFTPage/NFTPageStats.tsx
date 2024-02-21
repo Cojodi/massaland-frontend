@@ -1,18 +1,18 @@
-import Button from "../../components/Button/Button"
-import TooltipIconButton from "../../components/Tooltip/TooltipIconButton"
-import Image from "next/future/image"
-import Link from "next/link"
-import React from "react"
-import styled from "styled-components"
+import Button from "../../components/Button/Button";
+import TooltipIconButton from "../../components/Tooltip/TooltipIconButton";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import styled from "styled-components";
 
 const ButtonsContainer = styled.div`
   .visit-button {
     padding: 10px 24px;
     line-height: normal;
   }
-`
+`;
 
-const ImageContainer = styled.div``
+const ImageContainer = styled.div``;
 
 const NFTPageStats = ({
   data,
@@ -20,29 +20,29 @@ const NFTPageStats = ({
   nftCollectionLink,
   nftCollectionName,
 }: {
-  data: NFTData | null
-  nftCollectionPreview?: { name: string; image_url: string }[]
-  nftCollectionLink?: string
-  nftCollectionName?: string
+  data: NFTData | null;
+  nftCollectionPreview?: { name: string; image_url: string }[];
+  nftCollectionLink?: string;
+  nftCollectionName?: string;
 }) => {
   if (!nftCollectionPreview) {
-    return null
+    return null;
   }
   const totalVolume = data?.total_volume_all_time
     ? Math.floor((data?.total_volume_all_time / 1e18) * 1000 + Number.EPSILON) /
       1000
-    : "N/A"
-  let floorPrice = null
+    : "N/A";
+  let floorPrice = null;
   if (data?.floor_list_price) {
-    const displayFloorPrice = data?.floor_list_price / 1e18
+    const displayFloorPrice = data?.floor_list_price / 1e18;
     if (displayFloorPrice < 0.001) {
-      floorPrice = "< 0.001"
+      floorPrice = "< 0.001";
     } else {
       floorPrice =
-        Math.round(displayFloorPrice * 10000 + Number.EPSILON) / 10000
+        Math.round(displayFloorPrice * 10000 + Number.EPSILON) / 10000;
     }
   } else {
-    floorPrice = "N/A"
+    floorPrice = "N/A";
   }
   return (
     <section className="lg:mt-24 lg:mb-24 mt-12 mb-12">
@@ -131,7 +131,7 @@ const NFTPageStats = ({
         </div>
       </ButtonsContainer>
     </section>
-  )
-}
+  );
+};
 
-export default NFTPageStats
+export default NFTPageStats;

@@ -60,14 +60,6 @@ const HomeDesktopMenu = ({ currentTheme, setTheme }: DesktopMenuProps) => {
           <a href="https://massa.net/" target={"_blank"} rel="noreferrer">
             Massa
           </a>{" "}
-          and{" "}
-          <a
-            href="https://twitter.com/Blockflow_DAO"
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            Blockflow Alliance DAO
-          </a>
         </h2>
       </div>
     </div>

@@ -13,7 +13,6 @@
     "precommit-hook": "lint-staged"
   },
   "dependencies": {
-    "@massalabs/massa-web3": "^3.0.2",
     "@massalabs/wallet-provider": "^1.5.2",
     "bignumber.js": "^9.1.1",
     "bowser": "^2.11.0",
@@ -54,6 +53,7 @@
     "typescript": "4.7.4"
   },
   "browser": {
+    "fs": false,
     "path": false,
     "os": false
   },

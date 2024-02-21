@@ -2,7 +2,7 @@ import starEmpty from "../../assets/icons/starEmpty.svg";
 import starFilled from "../../assets/icons/starFilled.svg";
 import ConnectWalletModal from "../../components/Modal/ConnectWalletModal";
 import { getRatingForDapp, getRatingsFromUser } from "../../helpers/rating";
-import { useWallet } from "@alephium/web3-react";
+import { IAccount, IProvider } from "@massalabs/wallet-provider";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
@@ -15,10 +15,13 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
   const [averageRating, setAverageRating] = useState(null);
   const [error, setError] = useState<string | null>(null);
   const [hoverIndex, setHoverIndex] = useState<number | null>(null);
-  const { account, connectionStatus, signer } = useWallet();
 
   const [currentRating, setCurrentRating] = useState<number | null>(null);
   const [isRatingModalOpen, setRatingModalOpen] = useState(false);
+
+  const [account, setAccount] = useState<IAccount | null>(null);
+  const [provider, setProvider] = useState<IProvider | null>(null);
+  const [errorMessage, setErrorMessage] = useState<any>("");
   useEffect(() => {
     const getRatingsData = async () => {
       const dappRatings = await getRatingForDapp(dappKey);
@@ -34,19 +37,28 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
         setCurrentRating(rating - 1);
       }
     };
-    if (account?.address) {
-      getUserOldRatings({ account: account.address });
-    }
+    const initWallet = async () => {
+      try {
+        const { providers } = await import("@massalabs/wallet-provider");
+        let provider = (await providers(true, 10000))[0];
+        let accounts = await provider.accounts();
+        if (accounts.length === 0) {
+          setErrorMessage("No accounts found");
+          return;
+        }
+        console.log(provider);
+        setProvider(provider);
+        setAccount(accounts[0]);
+        if (accounts[0]?.address()) {
+          await getUserOldRatings({ account: accounts[0]?.address() });
+        }
+      } catch (e) {
+        console.log(e);
+        toast.info("Install a supported Massa wallet provider to connect!");
+      }
+    };
+    initWallet();
   }, []);
-
-  const determineIfMainnet = () => {
-    if (typeof window !== "undefined") {
-      const { hostname } = window.location;
-      return hostname.includes("massa.land");
-    } else {
-      return false;
-    }
-  };
 
   const rateDapp = async (rating: number) => {
     let ratingValue = rating + 1;
@@ -58,7 +70,7 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
       throw Error("Not rated");
     }
 
-    if (!account?.address) {
+    if (!account?.address()) {
       throw Error("Invalid account address");
     }
     //todo
@@ -75,7 +87,7 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
       name: dappKey,
       signature,
       rating_score: ratingValue,
-      account_id: account?.address,
+      account_id: account?.address(),
     };
 
     const handleErrors = (response: any) => {
@@ -155,7 +167,7 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
               onMouseEnter={() => setHoverIndex(val)}
               onMouseLeave={() => setHoverIndex(null)}
               onClick={() => {
-                if (connectionStatus === "disconnected") {
+                if (!account?.address()) {
                   setRatingModalOpen(true);
                 } else {
                   setCurrentRating(val);
