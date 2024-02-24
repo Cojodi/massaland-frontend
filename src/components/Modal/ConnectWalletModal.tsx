@@ -13,9 +13,9 @@ type Props = {
 };
 
 const textVariantDapp =
-  "To rate this dapp, you need to use an Massa wallet and connect it to massaland.";
+  "To rate this dapp, you need to use a Massa wallet and connect it to massaland.";
 const textVariantNav =
-  "To rate this dapp, you need to use an Massa wallet and connect it to massaland.";
+  "To rate this dapp, you need to use a Massa wallet and connect it to massaland.";
 
 const ConnectWalletModal = ({
   isOpen,

@@ -40,10 +40,9 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
     const initWallet = async () => {
       try {
         const { providers } = await import("@massalabs/wallet-provider");
-        let provider = (await providers(true, 10000))[0];
+        let provider = (await providers(true, 3000))[0];
         let accounts = await provider.accounts();
         if (accounts.length === 0) {
-          setErrorMessage("No accounts found");
           return;
         }
         console.log(provider);
