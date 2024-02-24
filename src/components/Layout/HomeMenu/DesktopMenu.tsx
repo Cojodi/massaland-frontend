@@ -36,7 +36,7 @@ const HomeDesktopMenu = ({ currentTheme, setTheme }: DesktopMenuProps) => {
             variant="primary"
             className="h-min"
             style={{ padding: "13px 24px", lineHeight: "normal" }}
-            href="https://github.com/cojodi/massaland#-add-your-dapp-to-massaland"
+            href="https://github.com/cojodi/massaland-frontend#-add-your-dapp-to-massaland"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -40,7 +40,7 @@
     }
   ],
   "verified": false,
-  // change to true if your contracts are verified on Alephium
+  // change to true if your contracts are verified on Massa
   "dotw": false,
   //leave 'false'
   "links": {

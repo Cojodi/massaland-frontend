@@ -21,7 +21,7 @@ const DesktopMenu = ({ currentTheme, setTheme }: DesktopMenuProps) => {
   const setRatings = useCategoryStore((state) => state.setRatings);
   return (
     <div className="hidden lg:block bg-white dark:bg-light-black">
-      <AnnouncementBar>The best Alephium Dapps.</AnnouncementBar>
+      <AnnouncementBar>The best Massa Dapps.</AnnouncementBar>
       <div className="relative w-full flex justify-between items-center pr-6 border-t border-b border-border-grey dark:border-white/10">
         <div className="absolute w-full h-full flex justify-center items-center">
           <Link href="/">
@@ -73,7 +73,7 @@ const DesktopMenu = ({ currentTheme, setTheme }: DesktopMenuProps) => {
             variant="primary"
             className="h-min"
             style={{ padding: "13px 24px", lineHeight: "normal" }}
-            href="https://github.com/cojodi/massaland#-add-your-dapp-to-massaland"
+            href="https://github.com/cojodi/massaland-frontend#-add-your-dapp-to-massaland"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -154,7 +154,7 @@ const MobileMenu = ({ currentTheme, setTheme }: MobileMenuProps) => {
               variant="primary"
               className="w-full"
               withoutMobile
-              href="https://github.com/cojodi/massaland#-add-your-dapp-to-massaland"
+              href="https://github.com/cojodi/massaland-frontend#-add-your-dapp-to-massaland"
               target="_blank"
               rel="noopener noreferrer"
             >

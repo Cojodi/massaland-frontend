@@ -1,7 +1,7 @@
-import alephiumLogoDark from "../../assets/alephium-logos/dark/Logo-Horizontal-Dark.svg";
-import alephiumLogoLight from "../../assets/alephium-logos/light/Logo-Horizontal-Light.svg";
 import githubLogo from "../../assets/github-icon.svg";
 import githubLogoLight from "../../assets/github-light.svg";
+import massaLogoLight from "../../assets/massa-logos/massa-logo-light.png";
+import massaLogoDark from "../../assets/massa-logos/massa-logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -20,7 +20,7 @@ const Footer = ({ currentTheme }: FooterProps) => {
         <div className="flex flex-row items-center justify-center mb-4 md:mb-0">
           <div>
             <a
-              href={"https://github.com/cojodi/massaland"}
+              href={"https://github.com/cojodi/massaland-frontend"}
               className="flex justify-center items-center"
             >
               <Image
@@ -37,10 +37,8 @@ const Footer = ({ currentTheme }: FooterProps) => {
               href={"https://massa.net"}
             >
               <Image
-                src={
-                  currentTheme === "dark" ? alephiumLogoLight : alephiumLogoDark
-                }
-                width={120}
+                src={currentTheme === "dark" ? massaLogoLight : massaLogoDark}
+                width={150}
                 height={50}
                 alt={"massa logo"}
               />

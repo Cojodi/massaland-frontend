@@ -23,6 +23,7 @@ module.exports = {
       black: "#000",
       white: "#fff",
       orange: "#ff5d51",
+      red: "#FF0000",
       lightgrey: "#8F8D8C",
       clay: "#C2C0BE",
       "light-black": "#181818",

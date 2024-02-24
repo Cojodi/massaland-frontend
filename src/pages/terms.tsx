@@ -83,9 +83,7 @@ const Home = () => {
         </h3>
         <p>
           This Agreement shall be governed by and interpreted in accordance with
-          the laws of Germany and all disputes arising under this Agreement
-          shall be subject to the exclusive jurisdiction of the English and
-          Welsh courts.
+          the laws of Germany.
         </p>
       </div>
     </Layout>

@@ -54,7 +54,6 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
         }
       } catch (e) {
         console.log(e);
-        toast.info("Install a supported Massa wallet provider to connect!");
       }
     };
     initWallet();
@@ -73,14 +72,7 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
     if (!account?.address()) {
       throw Error("Invalid account address");
     }
-    //todo
-    // const messageParams: SignMessageParams = {
-    //   message: `${dappKey},${ratingValue}`,
-    //   signerAddress: account?.address,
-    //   messageHasher: "alephium",
-    // };
-    // console.log(signer);
-    // const signatures = signer?.signMessage(messageParams);
+
     const signature = "test";
     const bodyData = {
       dapp_key: dappKey,

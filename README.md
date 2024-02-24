@@ -4,24 +4,13 @@
 
 </div>
 
-![Vercel CI](https://vercelbadge.vercel.app/api/cojodi/massaland)
+![Vercel CI](https://vercelbadge.vercel.app/api/cojodi/massaland-frontend)
 
 ## 🧭 Explore the Massa ecosystem
 
-Visit <a href="https://massa.land"><b>massa.land</b></a> to explore the most influential dapps in the Alephium
+Visit <a href="https://massa.land"><b>massa.land</b></a> to explore the most influential dapps in the Massa
 ecosystem.
 
-To use them, download the <a href="https://github.com/alephium/desktop-wallet"><b>Alephium Desktop Wallet</b></a> or use
-the Massa Wallet Browser Extension for Chrome or Firefox:
-
-<div align="center">
-    <a href="https://chromewebstore.google.com/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj?pli=1">
-        <img src="./src/assets/google-chrome-icon.svg" width=50/>
-    </a>
-    <a href="https://addons.mozilla.org/de/firefox/addon/alephiumextensionwallet/">
-        <img src="./src/assets/firefox-browser-icon.svg" width=50/>
-    </a>
-</div>
 
 ## ✅ Add your dapp to massaland
 
@@ -37,7 +26,7 @@ Steps:
    WebP.
 3. Fork this repo and create a new folder with your dapp name under `/public/dapps/`
 4. Add your optimised images to the folder
-5. Copy [`dapp_data_example.json`](https://github.com/Cojodi/massaland/blob/develop/dapp_data_example.json), rename it
+5. Copy [`dapp_data_example.json`](https://github.com/cojodi/massaland-frontend/blob/develop/dapp_data_example.json), rename it
    with your dapp's name in lowercase and move it to `/data`
 6. Fill out the fields in the json file with your dapp's data
 7. Ensure the json points to your images, i.e.
@@ -61,9 +50,9 @@ Someone from the massaland team will review the PR and contact you if they need 
 ## Maintainers
 This repo is maintained by [Fugashu](https://github.com/Fugashu) and [msMatix](https://github.com/msMatix).
 
-For any questions either create an issue on this repo or find us on the Alephium Discord:
+For any questions either create an issue on this repo or find us on the Massa Discord:
 
-<a href="https://discord.gg/3y8HvQ97s4">
+<a href="https://discord.com/invite/massa">
   <img src="https://img.shields.io/badge/Discord-6666FF?style=for-the-badge&logo=discord&logoColor=white">
 </a>
 
@@ -117,7 +106,7 @@ We are immensely grateful to [Massa](https://massa.net/)  for their generous sup
 For more information about our sponsor:
 <div align="center">
 <a href="https://massa.net/">
-<img src="src/assets/alephium-logos/grey/Logo-Icon-Grey.png" alt="Alephium" title="Alephium" style="width: 100px;">
+<img src="src/assets/massa-logos/massa-logo.png" alt="Massa Labs" title="Massa Labs" style="width: 100px;">
 </a>
 
 </div>

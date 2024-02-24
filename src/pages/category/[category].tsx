@@ -54,7 +54,7 @@ const CategoryPage = ({
   const router = useRouter();
   const [showMobileFilters, setShowMobileFilters] = useState(false);
   const [dappRatings, setDappRatings] = useState<{ [key: string]: string[] }>(
-    {},
+    {}
   );
   const selectedCategory = useCategoryStore((state) => state.selectedCategory);
   const changeCategory = useCategoryStore((state) => state.changeCategory);
@@ -129,7 +129,7 @@ const CategoryPage = ({
           />
           <div className="cards">
             <h1 className="lg:hidden font-semibold text-xl leading-none mb-5 mt-8">
-              {"Alephium " +
+              {"Massa " +
                 allCategories.find((item) => item.key === selectedCategory)
                   ?.name}
             </h1>
@@ -171,7 +171,7 @@ const CategoryPage = ({
 };
 
 export const getStaticProps: GetStaticProps<{ dappCards: DappCard[] }> = async (
-  context,
+  context
 ) => {
   const category = context?.params?.category as string;
 

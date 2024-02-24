@@ -5,7 +5,6 @@ import powerLight from "../../assets/icons/powerLight.svg";
 import powerorange from "../../assets/icons/powerOrange.svg";
 import { useDarkMode } from "../../hooks/useDarkMode";
 import ConnectWalletModal from "../Modal/ConnectWalletModal";
-import AlephiumWalletConnectButton from "../WalletConnect/AlephiumWalletConnect";
 import { IAccount, IProvider } from "@massalabs/wallet-provider";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
@@ -56,14 +55,14 @@ const ConnectWallet = () => {
           <div className="font-semibold mr-[20px] flex justify-center lg:justify-start items-center lg:items-start w-full lg:w-auto">
             Connect
           </div>
-          <div className="absolute w-[1px] h-full bg-black dark:bg-white right-10 group-hover:bg-orange" />
+          <div className="absolute w-[1px] h-full bg-black dark:bg-white right-10 group-hover:bg-red" />
           <div>
             <div className="flex group-hover:hidden">
               <Image
                 src={currentTheme === "dark" ? powerLight : power}
                 alt="power-icon"
                 className="text-orange"
-                color="orange"
+                color="red"
               />
             </div>
             <div className="hidden group-hover:flex">
@@ -71,7 +70,7 @@ const ConnectWallet = () => {
                 src={powerorange}
                 alt="power-icon"
                 className="text-orange"
-                color="orange"
+                color="red"
               />
             </div>
           </div>

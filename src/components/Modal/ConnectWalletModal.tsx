@@ -1,6 +1,5 @@
-import alephiumLogo from "../../assets/alephium-logos/dark/Logo-Horizontal-Dark.svg";
 import alert from "../../assets/icons/alert.svg";
-import Button from "../Button/Button";
+import massaLogo from "../../assets/massa-logos/massa-logo.png";
 import Modal from "./Modal";
 import Image from "next/image";
 import React from "react";
@@ -27,30 +26,14 @@ const ConnectWalletModal = ({
 }: Props) => (
   <Modal isOpen={isOpen} onClose={onClose}>
     <div className="flex flex-col items-center justify-center mt-10">
-      <Image src={alephiumLogo} alt="massa-logo" />
+      <Image src={massaLogo} alt="massa-logo" />
       <div className="text-[40px] leading-[40px] font-bold mt-8 text-black text-center">
         Connect and rate
       </div>
       <div className="text-[20px] leading-[28px] text-center font-light text-black mt-8 mb-10 max-w-[75%]">
         {fromNav ? textVariantNav : textVariantDapp}
       </div>
-      <div className="pb-14">
-        {/*<AlephiumConnectButton.Custom>*/}
-        {/*  {({ show }) => {*/}
-        {/*    return (*/}
-        {/*      <Button*/}
-        {/*        variant="primary"*/}
-        {/*        onClick={() => {*/}
-        {/*          onConfirm();*/}
-        {/*          show?.();*/}
-        {/*        }}*/}
-        {/*      >*/}
-        {/*        Connect and rate*/}
-        {/*      </Button>*/}
-        {/*    );*/}
-        {/*  }}*/}
-        {/*</AlephiumConnectButton.Custom>*/}
-      </div>
+      <div className="pb-14"></div>
       {error && (
         <div className="bg-black flex gap-3 items-center text-white font-[14px] p-4 rounded-lg mb-14">
           <Image src={alert} alt="alert" />

@@ -11,7 +11,7 @@ import styled from "styled-components";
 const Icon = styled.a`
   &.active-icon {
     svg path {
-      fill: #ff5d51;
+      fill: #ff0000;
     }
   }
 `;
