@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   env: {
-    NEXT_PUBLIC_API_URL: "https://api.alph.land",
+    NEXT_PUBLIC_API_URL: "https://api.massa.land",
   },
   swcMinify: true,
   compiler: {
