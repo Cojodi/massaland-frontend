@@ -24,9 +24,27 @@ const ConnectWallet = () => {
   };
 
   useEffect(() => {
-    onConnectClicked();
+    onInitialWalletLoad();
   }, []);
   const onConnectClicked = async () => {
+    try {
+      const { providers } = await import("@massalabs/wallet-provider");
+      let provider = (await providers(true, 3000))[0];
+      let accounts = await provider.accounts();
+      if (accounts.length === 0) {
+        setErrorMessage("No accounts found");
+        return;
+      }
+      console.log(provider);
+      setProvider(provider);
+      setAccount(accounts[0]);
+    } catch (e) {
+      console.log(e);
+      toast.info("Please install a Massa Wallet Provider and refresh.");
+    }
+  };
+
+  const onInitialWalletLoad = async () => {
     try {
       const { providers } = await import("@massalabs/wallet-provider");
       let provider = (await providers(true, 3000))[0];
