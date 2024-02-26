@@ -26,7 +26,7 @@ Steps:
    WebP.
 3. Fork this repo and create a new folder with your dapp name under `/public/dapps/`
 4. Add your optimised images to the folder
-5. Copy [`dapp_data_example.json`](https://github.com/cojodi/massaland-frontend/blob/develop/dapp_data_example.json), rename it
+5. Copy [`dapp_data_example.json`](https://github.com/cojodi/massaland-frontend/blob/main/dapp_data_example.json), rename it
    with your dapp's name in lowercase and move it to `/data`
 6. Fill out the fields in the json file with your dapp's data
 7. Ensure the json points to your images, i.e.
@@ -55,28 +55,6 @@ For any questions either create an issue on this repo or find us on the Massa Di
 <a href="https://discord.com/invite/massa">
   <img src="https://img.shields.io/badge/Discord-6666FF?style=for-the-badge&logo=discord&logoColor=white">
 </a>
-
-## 📣 Share your dapp rating with the world
-
-Embed the massaland rating widget in your application!
-
-![Widget Example](public/widget_example.png)
-
-#### Using the widget
-
-```
-<a href="https://www.massa.land/{your_dapp_name}" style="display:inline-block;position:relative">
-  <div style="position:absolute;top:0;right:0;bottom:0;left:0;"></div>
-  <iframe src="https://www.massa.land/widgets/rating?dappname={your_dapp_name}" width="260" height="176" frameBorder="0" title="massaland Widget"></iframe>
-</a>
-```
-
-1. Copy and paste the snippet above
-2. In `<a href="…">` change `your_dapp_name` to exactly the same as the name of your dapp as shown in your massaland url.
-3. Also change `your_dapp_name` in the `<iframe src="…">`
-4. (Optional) you can also set the theme to `theme=light` or `theme=dark` 😎 (default uses the device settings).  
-   Just add the `theme` param to the url after your dappname.
-5. That's it!
 
 ## Donations
 
