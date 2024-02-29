@@ -173,7 +173,8 @@ const MobileMenu = ({ currentTheme, setTheme }: MobileMenuProps) => {
           Discover the best dapps on Massa
         </h1>
         <h2 className="text-black dark:text-white text-[16px] leading-[20px] font-lighter">
-          Proudly sponsored by <a href="https://massa.net/">Massa</a>
+          Proudly sponsored by <a href="https://massa.net/">Massa</a> and{" "}
+          <a href="https://massa-foundation.net/">Massa Foundation</a>
         </h2>
       </div>
     </>

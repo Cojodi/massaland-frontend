@@ -1,5 +1,6 @@
 import githubLogo from "../../assets/github-icon.svg";
 import githubLogoLight from "../../assets/github-light.svg";
+import massaFoundation from "../../assets/massa-logos/massa-foundation.png";
 import massaLogoLight from "../../assets/massa-logos/massa-logo-light.png";
 import massaLogoDark from "../../assets/massa-logos/massa-logo.png";
 import Image from "next/image";
@@ -41,6 +42,19 @@ const Footer = ({ currentTheme }: FooterProps) => {
                 width={150}
                 height={50}
                 alt={"massa logo"}
+              />
+            </a>
+          </div>
+          <div>
+            <a
+              className="flex justify-center items-center"
+              href={"https://massa-foundation.net"}
+            >
+              <Image
+                src={massaFoundation}
+                width={48}
+                height={48}
+                alt={"massa foundation logo"}
               />
             </a>
           </div>

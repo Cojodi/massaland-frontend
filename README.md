@@ -66,13 +66,6 @@ AU1VefqkYDNGHNoX6uoD4x9cqXVEfwatjF5cicPNaxLTGHhwgZLG
 
 Special thanks to [Argentlabs](https://github.com/argentlabs/dappland). We're deeply grateful for their work, which laid the groundwork for this project.
 
-We are immensely grateful to [Massa](https://massa.net/)  for their generous support and sponsorship of this project.
+We are immensely grateful to [Massa](https://massa.net/) and  [Massa Foundation](https://massa.foundation/) for their generous support and sponsorship of this project.
 
-For more information about our sponsor:
-<div align="center">
-<a href="https://massa.net/">
-<img src="src/assets/massa-logos/massa-logo.png" alt="Massa Labs" title="Massa Labs" style="width: 100px;">
-</a>
-
-</div>
 
