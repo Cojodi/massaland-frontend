@@ -174,7 +174,7 @@ const MobileMenu = ({ currentTheme, setTheme }: MobileMenuProps) => {
         </h1>
         <h2 className="text-black dark:text-white text-[16px] leading-[20px] font-lighter">
           Proudly sponsored by <a href="https://massa.net/">Massa</a> and{" "}
-          <a href="https://massa-foundation.net/">Massa Foundation</a>
+          <a href="https://massa.foundation/">Massa Foundation</a>
         </h2>
       </div>
     </>

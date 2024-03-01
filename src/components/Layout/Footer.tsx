@@ -48,7 +48,7 @@ const Footer = ({ currentTheme }: FooterProps) => {
           <div>
             <a
               className="flex justify-center items-center"
-              href={"https://massa-foundation.net"}
+              href={"https://massa.foundation"}
             >
               <Image
                 src={massaFoundation}
