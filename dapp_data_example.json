@@ -21,7 +21,6 @@
     // if not live yet:
     "ComingSoon"
   ],
-  "group": "<If applicable, on which group your dApp is deployed. Example: Group 0>",
   // Remove all that don't apply.
   "contracts": [
     {
