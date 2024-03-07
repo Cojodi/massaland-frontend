@@ -1,0 +1,37 @@
+{
+    "name": "Dusa",
+    "description": "Dusa is laying the primitives for the first advanced trading, fully decentralized DEX, with automatic DCA, limit orders, trailing stop and liquidity management. Dusa offers an AMM infrastructure inspired by the liquidity book model, which is an improved version of concentrated liquidity with volatile fees.",
+    "short_description": "Massa's best DEX",
+    "tags": ["DeFi"],
+    "contracts": [],
+    "audits": [
+      {
+        "name": "Sayfer",
+        "url": "https://docsend.com/view/vhjd5334hr3fbwt7"
+      }
+    ],
+    "verified": true,
+    "dotw": false,
+    "links": {
+      "website": "https://dusa.io",
+      "careers": "contact@dusa.io",
+      "twitter": "https://twitter.com/DusaLabs",
+      "telegram": "https://t.me/dusacommunity",
+      "discord": "https://discord.com/invite/tgwtT484nz",
+      "github": "https://github.com/dusaprotocol",
+      "medium": "https://medium.com/@dusalabs"
+    },
+    "twitterName": "@DusaLabs",
+    "teamInfo": {
+      "contactEmail": "contact@dusa.io",
+      "founded": "2022-07-07T00:00:00.000Z",
+      "anonymous": false
+    },
+    "tokens": [],
+    "media": {
+      "logoUrl": "/dapps/dusa/dusa-logo.png",
+      "bannerUrl": "/dapps/dusa/dusa-banner.png",
+      "previewUrl": "/dapps/dusa/dusa-preview.png"
+    }
+  }
+  
