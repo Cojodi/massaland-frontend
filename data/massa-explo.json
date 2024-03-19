@@ -1,0 +1,32 @@
+{
+  "name": "Massa Explo",
+  "description": "Massa Explo ...",
+  "short_description": "...",
+  "tags": ["Infrastructure", "Wallets", "Social"],
+  "contracts": [],
+  "audits": [],
+  "verified": true,
+  "dotw": false,
+  "links": {
+    "website": "https://station.massa.net/",
+    "careers": "https://massa.net/More/Careers",
+    "twitter": "https://twitter.com/massalabs",
+    "telegram": "https://t.me/massanetwork",
+    "discord": "https://discord.com/invite/massa",
+    "github": "https://github.com/massalabs/massa",
+    "youtube": "https://www.youtube.com/channel/UChVfdvYpn0eFk4B-T7TGmOg",
+    "medium": "https://massalabs.medium.com/"
+  },
+  "twitterName": "@MassaLabs",
+  "teamInfo": {
+    "contactEmail": "info@massa.net",
+    "founded": "2020-05-07T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/massa-explo/logo.png",
+    "bannerUrl": "/dapps/massa-explo/banner.png",
+    "previewUrl": "/dapps/massa-explo/preview.png"
+  }
+}
