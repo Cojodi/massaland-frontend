@@ -1,25 +1,25 @@
 {
-  "name": "Massa Explo",
-  "description": "Massa Explo ...",
-  "short_description": "...",
-  "tags": ["Infrastructure", "Wallets", "Social"],
+  "name": "Massexplo",
+  "description": "Massexplo allows you to track and explore all the transactions taking place on the Massa blockchain.",
+  "short_description": "Massa Blockchain Explorer",
+  "tags": ["Explorer", "Tokens", "NFTs"],
   "contracts": [],
   "audits": [],
   "verified": true,
   "dotw": false,
   "links": {
-    "website": "https://station.massa.net/",
-    "careers": "https://massa.net/More/Careers",
-    "twitter": "https://twitter.com/massalabs",
+    "website": "https://massexplo.io/",
+    "careers": "https://massexplo.io/",
+    "twitter": "https://twitter.com/altailabs",
     "telegram": "https://t.me/massanetwork",
-    "discord": "https://discord.com/invite/massa",
+    "discord": "https://discord.gg/Y2rXpUU2Tk",
     "github": "https://github.com/massalabs/massa",
-    "youtube": "https://www.youtube.com/channel/UChVfdvYpn0eFk4B-T7TGmOg",
-    "medium": "https://massalabs.medium.com/"
+    "youtube": "#",
+    "medium": "#"
   },
-  "twitterName": "@MassaLabs",
+  "twitterName": "@altailabs",
   "teamInfo": {
-    "contactEmail": "info@massa.net",
+    "contactEmail": "altaydeveloper@gmail.com",
     "founded": "2020-05-07T00:00:00.000Z",
     "anonymous": false
   },
