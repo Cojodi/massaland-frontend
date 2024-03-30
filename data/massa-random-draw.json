@@ -1,0 +1,29 @@
+{
+  "name": "Massa.ga",
+  "description": "Massa.ga is a autonomous random draw smart contract. Buy a ticket and win the prize pool. (Interval draw: 10min for BUILDNET)",
+  "short_description": "Autonomous random draw.",
+  "tags": ["Games", "Social"],
+  "contracts": [
+    {
+      "name": "BUILDNET",
+      "address": "AS12C2gDahvE1VV7Hd4qTaK3Zsa7soV19hmTyRnR9siTsoiv4AUmg"
+  }],
+  "audits": [],
+  "verified": false,
+  "dotw": false,
+  "links": {
+    "website": "https://massa.ga/"
+  },
+  "twitterName": "",
+  "teamInfo": {
+    "contactEmail": "contact@massa.ga",
+    "founded": "2024-03-29T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/massa-random-draw/logo.png",
+    "bannerUrl": "/dapps/massa-random-draw/banner.png",
+    "previewUrl": "/dapps/massa-random-draw/preview.png"
+  }
+}
